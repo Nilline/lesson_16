@@ -79,7 +79,8 @@
 									<input required id="state" type="text" name="state" value=""
 										class="estimate-summary-form__input input">
 									<label for="zip" class="estimate-summary-form__label labels">State/Province</label>
-									<input required id="zip" type="text" name="state" value="" class="estimate-summary-form__input input">
+									<input required id="zip" type="text" name="state" value=""
+										class="estimate-summary-form__input input">
 								</div>
 								<div class="estimate-summary-form__body rate-block">
 									<label for="delivery" class="rate-block__heading">Standard Rate</label>
@@ -102,7 +103,7 @@
 									<label for="discount" class="discount-form__label labels">Enter discount code</label>
 									<input id="discount" type="text" name="discount" value="" placeholder="Enter Discount code"
 										autocomplete="off" class="discount-form__input input">
-									<button type="button" class="discount-form__btn btn">Apply Discount</button>
+									<button type="button" class="discount-form__btn btn btn_white">Apply Discount</button>
 								</div>
 							</div>
 							<div class="form-summary__total total-form">
@@ -137,13 +138,14 @@
 											<img src="img/icons/paypal.svg" alt="image PayPal" class="btn__img">
 										</span>
 									</button>
-									<button type="submit" class="total-form__btn btn btn_white">Check Out with
+									<button type="submit" class="total-form__btn btn btn_gray">Check Out with
 										Multiple Addresses</button>
 								</div>
 							</div>
 							<div class="form-summary__bottom bottom-form-summary">
 								<p class="bottom-form-summary__text">
-									own it now, up to 6 months interest free <a href="#" class="bottom-form-summary__link">learn more</a>
+									own it now, up to 6 months interest free <a href="#" class="bottom-form-summary__link">learn
+										more</a>
 								</p>
 							</div>
 						</form>
@@ -261,24 +263,30 @@
 									class="form-address-shipping__input input">
 
 							</div>
-							<div class="form-address-shipping__bottom rate-block">
-								<div class="rate-block__row">
-									<label for="delivery-shipping" class="rate-block__heading rate-block__heading_flex">Standard Rate</label>
-									<input checked id="delivery-shipping" type="radio" name="state" value="Standard"
-										class="rate-block__delivery-radio">
-									<label for="delivery-shipping" class="rate-block__delivery-label rate-block__delivery-label_flex">
-										Price may vary depending on the item/destination. Shop Staff will contact you. $21.00
-									</label>
-									<span class="rate-block__value">21.00</span>
-								</div>
-								<div class="rate-block__row">
-									<label for="delivery-shipping-2" class="rate-block__heading rate-block__heading_flex">Pickup from store</label>
-									<input id="delivery-shipping-2" type="radio" name="state" value="Pickup"
-										class="rate-block__delivery-radio">
-									<label for="delivery-shipping-2" class="rate-block__delivery-label rate-block__delivery-label_flex">
-										1234 Street Adress City Address, 1234 $0.00
-									</label>
-									<span class="rate-block__value">0.00</span>
+							<div class="form-address-shipping__bottom">
+								<div class="form-address-shipping__bottom-content rate-block">
+									<div class="rate-block__row">
+										<label for="delivery-shipping"
+											class="rate-block__heading rate-block__heading_flex">Standard Rate</label>
+										<input checked id="delivery-shipping" type="radio" name="state" value="Standard"
+											class="rate-block__delivery-radio">
+										<label for="delivery-shipping"
+											class="rate-block__delivery-label rate-block__delivery-label_flex">
+											Price may vary depending on the item/destination. Shop Staff will contact you. $21.00
+										</label>
+										<span class="rate-block__value">21.00</span>
+									</div>
+									<div class="rate-block__row">
+										<label for="delivery-shipping-2"
+											class="rate-block__heading rate-block__heading_flex">Pickup from store</label>
+										<input id="delivery-shipping-2" type="radio" name="state" value="Pickup"
+											class="rate-block__delivery-radio">
+										<label for="delivery-shipping-2"
+											class="rate-block__delivery-label rate-block__delivery-label_flex">
+											1234 Street Adress City Address, 1234 $0.00
+										</label>
+										<span class="rate-block__value">0.00</span>
+									</div>
 								</div>
 							</div>
 							<button type="submit" class="form-address-shipping__btn btn btn_blue">Next</button>

@@ -209,7 +209,7 @@ body {
 	background-color: #ce615f;
 }
 .appointment__button:active {
-	background-color: #ce615f;
+	background-color: #b65654;
 }
 /* ======================================================================================================================================================== */
 .title-form {
@@ -280,7 +280,7 @@ body {
 	border-color: transparent;
 	color: #232c65;
 }
-.btn_white {
+.btn_gray {
 	background-color: #f5f7ff;
 	border-color: #a2a6b0;
 	color: #666;
@@ -313,6 +313,16 @@ body {
 .btn:active {
 	color: #013db6;
 	border-color: #013db6;
+}
+.btn_white:hover {
+	background-color: #0156ff;
+	border-color: transparent;
+	color: #fff;
+}
+.btn_white:active {
+	border-color: transparent;
+	background-color: #004adf;
+	color: #fff;
 }
 .summary {
 	font-family: "Poppins", sans-serif;
@@ -367,7 +377,7 @@ body {
 .rate-block__row {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content:space-between;
+	justify-content: space-between;
 }
 .rate-block__value {
 	flex: 0 0 20%;
@@ -377,7 +387,7 @@ body {
 	display: inline-flex;
 	justify-content: flex-end;
 }
-.rate-block__value::before{
+.rate-block__value::before {
 	content: "$";
 }
 .rate-block__row:not(:last-child) {
@@ -393,6 +403,7 @@ body {
 }
 .rate-block__delivery-label_flex {
 	flex: 0 1 80%;
+	padding: 0px 20px 0px 0px;
 }
 .rate-block__delivery-label::before {
 	content: "";
@@ -471,18 +482,6 @@ body {
 }
 .discount-form__input {
 	margin: 0px 0px 20px 0px;
-}
-.discount-form__btn:hover {
-	border-color: transparent;
-	background-color: #0156ff;
-	color: #fff;
-}
-.discount-form__btn:focus {
-	border-color: #0038a7;
-	color: #0038a7;
-}
-.discount-form__btn:active {
-	background-color: #003fbd;
 }
 
 .form-summary__total:not(:last-child) {
@@ -643,7 +642,7 @@ body {
 	font-size: 18px;
 	line-height: 1.5;
 	font-weight: 600;
-	border-bottom: 1px solid #CACDD8;
+	border-bottom: 1px solid #cacdd8;
 	padding: 0px 0px 14px 0px;
 	margin: 0px 0px 25px 0px;
 }
@@ -659,7 +658,7 @@ body {
 	align-self: flex-start;
 }
 .form-address-shipping__star {
-	color: #C94D3F;
+	color: #c94d3f;
 }
 .form-address-shipping__input {
 }
@@ -671,15 +670,21 @@ body {
 	font-size: 13px;
 	line-height: 2.1;
 	color: #666;
-	border-bottom: 1px solid #CACDD8;
+	border-bottom: 1px solid #cacdd8;
 	padding: 0px 0px 20px 0px;
 	margin: 0px 0px 21px 0px;
 }
 .form-address-shipping__bottom {
-	max-width: 730px;
+	display: flex;
+	max-width: 924px;
+	border-top: 1px solid #cacdd8;
+	padding: 18px 0px 0px 0px;
 }
 .form-address-shipping__bottom:not(:last-child) {
 	margin: 0px 0px 30px 0px;
+}
+.form-address-shipping__bottom-content {
+	flex: 0 1 730px;
 }
 .form-address-shipping__btn {
 	align-self: flex-start;
