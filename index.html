@@ -78,8 +78,8 @@
 									<label for="state" class="estimate-summary-form__label labels">State/Province</label>
 									<input required id="state" type="text" name="state" value=""
 										class="estimate-summary-form__input input">
-									<label required for="zip" class="estimate-summary-form__label labels">State/Province</label>
-									<input id="zip" type="text" name="state" value="" class="estimate-summary-form__input input">
+									<label for="zip" class="estimate-summary-form__label labels">State/Province</label>
+									<input required id="zip" type="text" name="state" value="" class="estimate-summary-form__input input">
 								</div>
 								<div class="estimate-summary-form__body rate-block">
 									<label for="delivery" class="rate-block__heading">Standard Rate</label>
@@ -133,9 +133,9 @@
 										Checkout</button>
 									<button type="submit" class="total-form__btn btn btn_orange">
 										<span class="btn__text">Check out with</span>
-										<div class="btn__icon">
+										<span class="btn__icon">
 											<img src="img/icons/paypal.svg" alt="image PayPal" class="btn__img">
-										</div>
+										</span>
 									</button>
 									<button type="submit" class="total-form__btn btn btn_white">Check Out with
 										Multiple Addresses</button>
@@ -154,7 +154,7 @@
 			<div class="page__registered registered">
 				<div class="registered__container">
 					<div class="registered__body">
-						<form method="" action="#" class="registered__form form-registered">
+						<form method="get" action="#" class="registered__form form-registered">
 							<h3 class="form-registered__title">Registered Customers</h3>
 							<p class="form-registered__subtitle">
 								If you have an account, sign in with your email address.
