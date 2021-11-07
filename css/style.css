@@ -86,132 +86,6 @@ body {
 }
 
 /* -----Main-CSS------------------------------------------------------------------------------------------------------------------------------------------- */
-.header,
-.footer {
-	padding: 35px 0;
-	background-color: #254964;
-	text-align: center;
-}
-.header__container,
-.footer__container {
-}
-.header__text,
-.footer__text {
-	font-size: 28px;
-	text-transform: uppercase;
-}
-/* ======= HEADER ========================================================================================================================================= */
-
-/* ======== PAGE ========================================================================================================================================== */
-.page {
-	padding: 50px 0;
-}
-.page__appointment {
-	margin: 0px 0px 100px 0px;
-}
-.page__summary {
-	margin: 0px 0px 100px 0px;
-}
-.page__registered {
-	margin: 0px 0px 100px 0px;
-}
-.page__shipping-address {
-}
-/* ======================================================================================================================================================== */
-.appointment {
-	font-family: "roboto", sans-serif;
-}
-.appointment__container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.appointment__body {
-	width: 48.26%;
-	display: inline-flex;
-	flex-direction: column;
-	align-items: center;
-	background-color: #5d62b5;
-	border-radius: 40px;
-	padding: 76px 57px;
-}
-.appointment__title {
-	font-size: 36px;
-	line-height: 1.7;
-	color: #fff;
-	font-weight: 900;
-	margin: 0px 0px 43px 0px;
-}
-.appointment__form {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 -11px;
-	row-gap: 22px;
-}
-.appointment__column {
-	display: flex;
-	flex-direction: column;
-	flex: 0 1 50%;
-	padding: 0 11px;
-}
-.appointment__column_last {
-	flex: 1 1 100%;
-}
-.appointment__input,
-.appointment__textarea {
-	color: #fff;
-	width: 100%;
-	padding: 16px 23px;
-	background-color: transparent;
-	border: 2px solid rgba(255, 255, 255, 0.8);
-	border-radius: 10px;
-	transition: border-color 0.2s ease 0s;
-}
-.appointment__input::placeholder,
-.appointment__textarea::placeholder {
-	color: rgba(255, 255, 255, 0.8);
-	transition: opacity 0.2s ease 0s;
-}
-.appointment__textarea {
-	resize: none;
-	min-height: 180px;
-	margin: 0px 0px 30px 0px;
-}
-.appointment__input:focus,
-.appointment__textarea:focus {
-	border-color: #f2726f;
-}
-.appointment__input:focus::placeholder,
-.appointment__textarea:focus::placeholder {
-	opacity: 0;
-}
-.appointment__button {
-	cursor: pointer;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	align-self: flex-end;
-	font-size: 12px;
-	line-height: 120%;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 0.15px;
-	background-color: #f2726f;
-	border-radius: 8px;
-	padding: 17px 30px;
-	color: #fff;
-	transition: background-color 0.2s ease 0s;
-}
-.appointment__button:hover {
-	background-color: #ce615f;
-}
-.appointment__button:focus {
-	background-color: #ce615f;
-}
-.appointment__button:active {
-	background-color: #b65654;
-}
-/* ======================================================================================================================================================== */
 .title-form {
 	cursor: pointer;
 	font-size: 18px;
@@ -241,6 +115,7 @@ body {
 	min-height: 50px;
 	border: 1px solid #a2a6b0;
 	transition: border-color 0.2s ease 0s;
+	background-color: #fff;
 	padding: 0 17px;
 }
 .input::placeholder {
@@ -252,6 +127,9 @@ body {
 }
 .input:focus::placeholder {
 	opacity: 0;
+}
+.input[required]:valid {
+	border-color: #00c700;
 }
 .btn {
 	cursor: pointer;
@@ -324,6 +202,137 @@ body {
 	background-color: #004adf;
 	color: #fff;
 }
+/* ======= HEADER ========================================================================================================================================= */
+.header,
+.footer {
+	padding: 35px 0;
+	background-color: #254964;
+	text-align: center;
+}
+.header__container,
+.footer__container {
+}
+.header__text,
+.footer__text {
+	font-size: 28px;
+	text-transform: uppercase;
+}
+
+/* ======== PAGE ========================================================================================================================================== */
+.page {
+	padding: 50px 0;
+}
+.page__appointment {
+	margin: 0px 0px 100px 0px;
+}
+.page__summary {
+	margin: 0px 0px 100px 0px;
+}
+.page__registered {
+	margin: 0px 0px 100px 0px;
+}
+.page__shipping-address {
+}
+.page__form-block {
+}
+/* ======================================================================================================================================================== */
+.appointment {
+	font-family: "roboto", sans-serif;
+}
+.appointment__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.appointment__body {
+	width: 48.26%;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #5d62b5;
+	border-radius: 40px;
+	padding: 76px 57px;
+}
+.appointment__title {
+	font-size: 36px;
+	line-height: 1.7;
+	color: #fff;
+	font-weight: 900;
+	margin: 0px 0px 43px 0px;
+}
+.appointment__form {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -11px;
+	row-gap: 22px;
+}
+.appointment__column {
+	display: flex;
+	flex-direction: column;
+	flex: 0 1 50%;
+	padding: 0 11px;
+}
+.appointment__column_last {
+	flex: 1 1 100%;
+}
+.appointment__input,
+.appointment__textarea {
+	color: #fff;
+	width: 100%;
+	padding: 16px 23px;
+	background-color: transparent;
+	border: 2px solid rgba(255, 255, 255, 0.8);
+	border-radius: 10px;
+	transition: border-color 0.2s ease 0s;
+}
+.appointment__input::placeholder,
+.appointment__textarea::placeholder {
+	color: rgba(255, 255, 255, 0.8);
+	transition: opacity 0.2s ease 0s;
+}
+.appointment__textarea {
+	resize: none;
+	min-height: 180px;
+	margin: 0px 0px 30px 0px;
+}
+.appointment__input:focus,
+.appointment__textarea:focus {
+	border-color: #f2726f;
+}
+.appointment__input:focus::placeholder,
+.appointment__textarea:focus::placeholder {
+	opacity: 0;
+}
+.appointment__input:valid {
+	border-color: #00c700;
+}
+.appointment__button {
+	cursor: pointer;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	align-self: flex-end;
+	font-size: 12px;
+	line-height: 120%;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.15px;
+	background-color: #f2726f;
+	border-radius: 8px;
+	padding: 17px 30px;
+	color: #fff;
+	transition: background-color 0.2s ease 0s;
+}
+.appointment__button:hover {
+	background-color: #ce615f;
+}
+.appointment__button:focus {
+	background-color: #ce615f;
+}
+.appointment__button:active {
+	background-color: #b65654;
+}
+/* ======================================================================================================================================================== */
 .summary {
 	font-family: "Poppins", sans-serif;
 }
@@ -691,7 +700,326 @@ body {
 	min-width: 210px;
 }
 /* ======================================================================================================================================================== */
-
+.block-form {
+	color: #fff;
+	padding: 400px 0px;
+}
+.block-form__container {
+	position: relative;
+	max-width: 800px;
+}
+.block-form__container::before,
+.block-form__container::after {
+	pointer-events: none;
+	content: "";
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	border-radius: 50%;
+	filter: blur(1px);
+}
+.block-form__container::before {
+	pointer-events: none;
+	bottom: 50%;
+	right: 50%;
+	box-shadow: 80px 100px 500px -40px #e91e63 inset, -400px -100px 500px 150px #ffeb3b inset;
+	transform: translate(140%, -10%);
+	animation: shadow-before 10s infinite linear alternate;
+}
+.block-form__container::after {
+	top: 50%;
+	left: 50%;
+	transform: translate(-140%, 10%);
+	animation: shadow-after 12s infinite linear alternate;
+}
+@keyframes shadow-before {
+	0% {
+		box-shadow: 80px 100px 500px -40px #e91e63 inset, -400px -100px 500px 150px #ffeb3b inset;
+	}
+	50% {
+		box-shadow: 80px -100px 500px -40px #e91e63 inset, -400px 100px 500px 150px #ffeb3b inset,
+			0px 0px 30px 0px #ff803b;
+	}
+	100% {
+		box-shadow: -80px 100px 500px -40px #e91e63 inset, 400px -100px 500px 150px #ffeb3b inset;
+	}
+}
+@keyframes shadow-after {
+	0% {
+		box-shadow: 80px 100px 500px -40px #30beff inset, -400px -100px 500px 150px #ee0bfa inset;
+	}
+	50% {
+		box-shadow: 80px -100px 500px -40px #30beff inset, -400px 100px 500px 150px #ee0bfa inset,
+			0px 0px 30px 0px #30beff;
+	}
+	100% {
+		box-shadow: -80px 100px 500px -40px #30beff inset, 400px -100px 500px 150px #ee0bfa inset;
+	}
+}
+.block-form__form {
+	position: relative;
+	z-index: 2;
+	padding: 40px 50px;
+	background-color: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(25px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+	border-right: 1px solid rgba(255, 255, 255, 0.25);
+	overflow: hidden;
+}
+.block-form__form::before {
+	content: "";
+	background-color: rgba(255, 255, 255, 0.015);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: translate(-40%, 0%) skew(20deg);
+}
+.block-form__row {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 50px;
+	margin: 0px -15px 30px;
+}
+.block-form__column {
+	flex: 1 1 50%;
+	padding: 0px 15px;
+}
+.block-form__column_flex-100 {
+	flex: 1 1 100%;
+}
+.block-form__column_flex-100 .block-form__body {
+	height: 120px;
+}
+.block-form__body {
+	position: relative;
+	height: 40px;
+	min-width: 250px;
+}
+.block-form__input,
+.block-form__textarea {
+	font-size: 15px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	background-color: transparent;
+	padding: 10px 15px;
+}
+.block-form__name {
+	font-size: 18px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	line-height: 40px;
+	pointer-events: none;
+	padding: 0 15px;
+	transition: all 0.6s ease 0s;
+}
+.block-form__line {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	transition: all 0.6s ease 0s;
+}
+.block-form__textarea {
+	resize: none;
+}
+.block-form__bottom {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+.block-form__btn {
+	position: relative;
+	cursor: pointer;
+	font-size: 20px;
+	display: inline-block;
+	border-radius: 3px;
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	padding: 17px 60px;
+	overflow: hidden;
+	transition: all 0.3s ease 0s;
+	text-transform: uppercase;
+}
+.block-form__btn::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-42%, 3%) skew(10deg);
+	border-radius: 45%;
+	width: 400px;
+	height: 400px;
+	background-color: rgb(0, 187, 255);
+	animation: rotate 15s infinite linear forwards;
+	transition: all 1s ease 0s;
+	filter: blur(0.3px);
+}
+.block-form__btn:hover {
+	border: 1px solid rgb(0, 187, 255);
+	box-shadow: 0px 0px 10px rgb(0, 187, 255), 0px 0px 30px rgb(0, 187, 255), 0px 0px 60px rgb(0, 187, 255),
+		0px 0px 100px rgba(0, 187, 255, 0.65);
+}
+.block-form__btn:hover::before {
+	top: -90%;
+}
+.block-form__btn-text {
+	position: relative;
+	z-index: 1;
+}
+.block-form__btn_reset {
+	border: 1px solid transparent;
+	overflow: visible;
+}
+.block-form__btn_reset::before,
+.block-form__btn_reset::after {
+	content: "";
+	width: 2px;
+	height: 2px;
+	position: absolute;
+	background-color: rgb(0, 187, 255);
+	box-shadow: 0px 0px 10px 1px rgb(0, 187, 255), 0px 0px 30px 1px rgb(0, 187, 255), 0px 0px 60px 1px rgb(0, 187, 255),
+		0px 0px 100px 1px rgb(0, 187, 255);
+	border-radius: 0;
+	transform: translate(0px, 0px);
+	animation: none;
+	transition: all 0.6s ease 0s;
+}
+.block-form__btn_reset::before {
+	top: 0;
+	left: 0;
+	animation: move-line-border-1 4s infinite linear;
+}
+.block-form__btn_reset::after {
+	bottom: 0;
+	right: 0;
+	animation: move-line-border-2 4s infinite linear
+}
+.block-form__btn_reset:hover {
+	background-color: rgb(0, 187, 255);
+}
+.block-form__btn_reset:hover::before,
+.block-form__btn_reset:hover::after {
+	box-shadow: none;
+}
+@keyframes move-line-border-1 {
+	0% {
+		top: 0;
+		left: 0;
+	}
+	12.5% {
+		width: 20px;
+	}
+	25% {
+		top: 0;
+		width: 2px;
+		height: 2px;
+		left: 100%;
+	}
+	37.5% {
+		height: 5px;
+	}
+	50% {
+		width: 2px;
+		height: 2px;
+		top: 100%;
+		left: 100%;
+	}
+	62.5% {
+		width: 20px;
+	}
+	75% {
+		width: 2px;
+		height: 2px;
+		top: 100%;
+		left: 0;
+	}
+	87.5% {
+		height: 5px;
+	}
+	100% {
+		width: 2px;
+		height: 2px;
+		top: 0;
+		left: 0;
+	}
+}
+@keyframes move-line-border-2 {
+	0% {
+		bottom: 0;
+		right: 0;
+	}
+	12.5% {
+		width: 20px;
+	}
+	25% {
+		bottom: 0;
+		width: 2px;
+		height: 2px;
+		right: 100%;
+	}
+	37.5% {
+		height: 5px;
+	}
+	50% {
+		width: 2px;
+		height: 2px;
+		bottom: 100%;
+		right: 100%;
+	}
+	62.5% {
+		width: 20px;
+	}
+	75% {
+		width: 2px;
+		height: 2px;
+		bottom: 100%;
+		right: 0;
+	}
+	87.5% {
+		height: 5px;
+	}
+	100% {
+		width: 2px;
+		height: 2px;
+		bottom: 0;
+		right: 0;
+	}
+}
+@keyframes rotate {
+	0% {
+		transform: translate(-50%, 3%) skew(10deg) rotate(0deg);
+	}
+	50% {
+		transform: translate(-42%, 3%) skew(0deg) rotate(180deg);
+	}
+	100% {
+		transform: translate(-50%, 3%) skew(10deg) rotate(360deg);
+	}
+}
+.block-form__input:focus + .block-form__name,
+.block-form__textarea:focus + .block-form__name,
+.block-form__input:valid + .block-form__name,
+.block-form__textarea:valid + .block-form__name {
+	transform: translate(-10px, -35px);
+}
+.block-form__input:focus ~ .block-form__line,
+.block-form__textarea:focus ~ .block-form__line,
+.block-form__input:valid ~ .block-form__line,
+.block-form__textarea:valid ~ .block-form__line {
+	height: 100%;
+}
 /* ======================================================================================================================================================== */
 
 /* ======================================================================================================================================================== */
