@@ -912,6 +912,7 @@ body {
 }
 .block-form__btn_reset:hover::before,
 .block-form__btn_reset:hover::after {
+	opacity: 0;
 	box-shadow: none;
 }
 @keyframes move-line-border-1 {
